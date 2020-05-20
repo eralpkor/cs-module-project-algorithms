@@ -15,7 +15,7 @@ def single_number(arr):
             dupes[i] += 1
         else:
             dupes[i] = 1
-
+    # find the item that values is one
     for item, value in dupes.items():
         if value == 1:
             return item
@@ -28,43 +28,10 @@ def single_number(arr):
 # array from the twice_sum and get the required number (which appears once in the 
 # array).
 # 2*(sum_of_array_without_duplicates) - (sum_of_array)
-def single_number(arr):
+def single_number2(arr):
     return 2 * sum(set(arr)) - sum(arr)
-
 
 
 if __name__ == '__main__':
     # Use the main function to test your implementation
     arr = [1, 1, 4, 4, 5, 5, 3, 3, 9, 0, 0]
-
-    # print(f"The odd-number-out is {single_number(arr)}")
-# print(single_number(arr))
-# single_number(arr)
-# print(single_number(arr))
-
-# unwanted = {arr[i], arr[j]}
-#             arr = [ele for ele in arr if ele not in unwanted]
-# creating a list 
-# list1 = [11, 5, 17, 18, 23, 50]  
-  
-# # items to be removed 
-# unwanted_num = {list1[0], list1[0 + 1]} 
-  
-# list1 = [ele for ele in list1 if ele not in unwanted_num] 
-  
-# # printing modified list 
-# print("New list after removing unwanted numbers: ", list1) 
-
-# seen = {}
-# dupes = []
-
-# for x in arr:
-#     if x not in seen:
-#         seen[x] = 1
-#     else:
-#         if seen[x] == 1:
-#             arr.append(x)
-#         seen[x] += 1
-
-# print(seen)
-# print(dupes)
