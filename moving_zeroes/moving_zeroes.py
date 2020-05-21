@@ -2,10 +2,11 @@
 Input: a List of integers
 Returns: a List of integers
 '''
-def moving_zeroes(arr):
-    # Your code here
+# Using list comprehension
 
-    pass
+def moving_zeroes(arr):
+    return [nonZero for nonZero in arr if nonZero != 0] + \
+        [zero for zero in arr if zero == 0]
 
 
 if __name__ == '__main__':
