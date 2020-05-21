@@ -5,13 +5,13 @@ Returns: an integer
 # 1. Loop the array and look for doubles
 # 2. Find doubles, count them and add to dictionary
 # 3. Loop the dupes dictionary find the value that singled out
-# First solution
+# First solution O(n)
 def single_number(arr):
     dupes = dict()
-    # Iterate over each element in list
+    # Iterate over each element in list O(n)
     for i in arr:
         # If element exists in dict then increment its value else add it in dict
-        if i in dupes:
+        if i in dupes: # O(1)
             dupes[i] += 1
         else:
             dupes[i] = 1
