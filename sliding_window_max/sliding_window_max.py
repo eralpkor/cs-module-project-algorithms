@@ -6,7 +6,7 @@ Returns: a List of integers
 #   The inner loop will run for k iterations.
 # 2. Create a variable to store the maximum of k elements traversed by the inner loop.
 # 3. Find the maximum of k elements traversed by the inner loop.
-# 4. Print the maximum element in every iteration of outer loop
+# 4. Return  an array of the maximum element in every iteration of outer loop
 
 # Time Complexity: O(N * K).
 # The outer loop runs n-k+1 times and the inner loop runs k times for every iteration
